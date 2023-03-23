@@ -146,6 +146,13 @@ img {
     background-size: 100%;
 }
 
+#herojobs {
+    height: 300px;
+    background-image: url(images/herojobs.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
 #mobile {
     display: inline;
 }
@@ -161,6 +168,33 @@ footer {
     font-style: italic;
     padding-bottom: 1em;
     border-top: 2px solid #8c3826;
+}
+
+table {
+    margin: auto;
+    width: 90%;
+    border-spacing: 0;
+}
+
+th,
+td {
+    padding: 10px;
+}
+
+tr:nth-of-type(odd) {
+    background-color: #D2B48E;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    padding-left: 1em;
+    width: 80%;
+}
+
+input,
+textarea {
+    margin-bottom: .5em;
 }
 
 @media (min-width: 600px) {
@@ -195,6 +229,10 @@ footer {
         background-image: url(images/heroguitar.jpg);
     }
 
+    #herojobs {
+        background-image: url(images/herojobs.jpg);
+    }
+
     #flow {
         display: flex;
         flex-direction: row;
@@ -216,6 +254,19 @@ footer {
     h4 {
         margin-right: 10%;
         margin-left: 10%;
+    }
+
+    form {
+        width: 40%;
+        display: grid;
+        grid-gap: 1em;
+        gap: 1em;
+        grid-template-columns: 6em 1fr;
+    }
+
+    input[type="submit"] {
+        grid-column: 2 / 3;
+        width: 9em;
     }
 }
 
