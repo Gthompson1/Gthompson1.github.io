@@ -51,7 +51,8 @@ nav, footer {
 }
 
 #mainNav {
-	float: right;
+	grid-area: nav;
+	border-bottom: 2px solid #011946;
 }
 
 #mainNav ul {
