@@ -27,13 +27,32 @@
 
     <main id="mainContent">
         <h2>Algo-Trading!</h2>
-        <p>I found a new passion for Algo-Trading recently after I took an intro Python programming course at
-            Utah State University.</p>
+        <p>I found my passion for Algo-Trading after I took an intro Python programming course at Utah State University.</p>
 
-        <a class="left" href="images/mr.jpg"><img src="images/mr.jpg" alt="Mean Reversion code" width=700 height=300> </a>
+        <a class="left" href="images/mr.jpg"><img src="images/mr.jpg" alt="Mean Reversion code" width=600 height=175> </a>
         
         <p>My first step was to write a program that would run an mean reversion trading strategy on a five day 
             moving average getting data from the Yahoo Finance module and using Alpaca as my broker.</p>
+        <p>The first challenges that I ran into in this phase were simply getting my program to function the way
+            I wanted it to. The second problem was how to chose what stocks to trade and put into my program. </p>
+        <p>After a lot of trial and error to get my program running how I want it to, and a little research into
+            stocks that would perform well with MR strategy, I was up and running. <br> <br> </p>
+        
+        <a class="right" href="images/Lambda.jpg"><img src="images/Lambda.jpg" alt="AWS Lambda" width=600 height=300></a>
+        
+        <p>AWS servers are really cheap (especioally the t.2 micro that I am using) however as a broke college
+            student, every dollar is important. So, in order to keep costs as low as possible, I decided to utilize
+            AWS Lambda to start my instance 5 minutes before my Crontab runs. This, in conjunction with AWS option 
+            to shutdown my server after 30 mins of idle time saves a lot of money.</p>
+        <p>However the Lambda function is only equipt to turn on my instance (the way that i have it set up)</p>
+
+        <a class="left" href="images/Cloudwatch.jpg"><img src="images/Cloudwatch.jpg" alt="Cloudwatch" width=600 height=300 ></a>
+        
+        <p>Intro cloudwatch events! AWS has another service where you can link two things based off of an event. 
+            For example, my cloud watch in plain english says "if its 1755 UTC time, then run this lambda function."</p>
+        <p>Overall, I learned a lot during this project and it was a great project to expose myself into some of the 
+            services that AWS has to offer, and the power of cloud computing!</p>
+    
     </main>
 
     <footer id="pageFooter">
